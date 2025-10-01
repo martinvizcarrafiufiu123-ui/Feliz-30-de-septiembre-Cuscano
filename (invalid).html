@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz 30 de Septiembre</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a2e1a, #1a5c3a);
+      color: #e0f0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      background-color: #2e8b57; /* Verde marino */
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+    .btn:hover {
+      background-color: #3cb371;
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    }
+
+    .player {
+      margin-top: 40px;
+      max-width: 90%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #a8d8a8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Feliz 30 de septiembre ❤!</h1>
+  <button class="btn" onclick="showPlayer()">Apreta aquí</button>
+
+  <div id="player" class="player" style="display:none;">
+    <iframe 
+      width="100%" 
+      height="166" 
+      scrolling="no" 
+      frameborder="no" 
+      allow="autoplay" 
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/260316883&color=%232e8b57&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+    </iframe>
+  </div>
+
+  <footer>
+    Día de regalar Hot Wheels 🚗 — Porque los hombres también merecen un detalle.
+  </footer>
+
+  <script>
+    function showPlayer() {
+      document.getElementById('player').style.display = 'block';
+      // Opcional: ocultar el botón después de hacer clic
+      // document.querySelector('.btn').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
